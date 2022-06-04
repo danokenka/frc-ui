@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'avatar',
     loadChildren: () => import('./pages/frc/examples/avatar/avatar.module').then( m => m.AvatarPageModule)
   },
+  {
+    path: 'alert',
+    loadChildren: () => import('./pages/frc/examples/alert/alert.module').then( m => m.AlertPageModule)
+  },
 ];
 
 @NgModule({
