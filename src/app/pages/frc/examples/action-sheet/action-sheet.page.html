@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>action-sheet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div class="grid-item">
+    <h2>Return Back Home</h2>
+    </div>
+  <ion-item color="medium" button lines="none" routerLink="/home">
+    <ion-icon name="home" slot="start"></ion-icon>
+    <ion-label>Home</ion-label>
+  </ion-item>
+  <br>
+  presentActionSheet
+  <ion-item color="medium" button lines="none" (click)="presentActionSheet()">
+    <ion-icon name="" slot="start"></ion-icon>
+    <ion-label>Get Action-Sheet</ion-label>
+  </ion-item>
+  <br>
+  
+</ion-content>
+
+

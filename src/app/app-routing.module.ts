@@ -31,6 +31,50 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./pages/frc/examples/alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'badge',
+    loadChildren: () => import('./pages/frc/examples/badge/badge.module').then( m => m.BadgePageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/frc/examples/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'picker',
+    loadChildren: () => import('./pages/frc/examples/picker/picker.module').then( m => m.PickerPageModule)
+  },
+  {
+    path: 'action-sheet',
+    loadChildren: () => import('./pages/frc/examples/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },
+  {
+    path: 'all-scss',
+    loadChildren: () => import('./pages/frc/examples/all-scss/all-scss.module').then( m => m.AllScssPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/frc/examples/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./pages/frc/examples/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/frc/examples/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./pages/frc/examples/button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/frc/examples/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'date-time',
+    loadChildren: () => import('./pages/frc/examples/date-time/date-time.module').then( m => m.DateTimePageModule)
+  },
 ];
 
 @NgModule({

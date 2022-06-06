@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button id="basic" expand="block" (click)="presentPicker()">Show Picker</ion-button>
+  <ion-button id="custom" expand="block" (click)="presentPicker()">Show Custom Picker</ion-button>
+  <br>
+  <ion-datetime [pickerOptions]="customPickerOptions" 
+              displayFormat="DD/MM/YYYY" 
+              pickerFormat="DD MMM YYYY">
+  </ion-datetime>
+
+  <ion-item>
+    <ion-label>Pick date</ion-label>
+    <ion-datetime
+      displayFormat="DD.MM.YYYY"
+      presentation="date"
+      [(ngModel)]="date"
+    ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pick date</ion-label>
+    <ion-datetime presentation="date" [(ngModel)]="date"></ion-datetime>
+  </ion-item>
+</ion-content>

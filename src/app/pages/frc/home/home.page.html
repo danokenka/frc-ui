@@ -18,6 +18,12 @@
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 
+
+  <ion-item color="favorite" lines="none" button>
+    <ion-icon name="exit" slot="start"></ion-icon>
+    <ion-label>Test Favorite Color</ion-label>
+
+  </ion-item>
   <ion-list>
     <ion-list-header> Navigate </ion-list-header>
     <!-- <ion-menu-toggle auto-hide="false"> -->
@@ -29,18 +35,59 @@
         </ion-item>
       <ion-item button lines="none" routerLink="/accordian">
         <ion-icon name="business" slot="start"></ion-icon>
-        <ion-label>Accordian</ion-label>
+        <ion-label>Accordians</ion-label>
       </ion-item>
       <!-- </ion-menu-toggle> -->
       <!-- <ion-menu-toggle> -->
+        <ion-item lines="none" routerLink="/action-sheet">
+          <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+          <ion-label>Action-Sheet</ion-label>
+        </ion-item>
+  
       <ion-item lines="none" routerLink="/avatar">
         <ion-icon name="checkbox-outline" slot="start"></ion-icon>
-        <ion-label>Avatar</ion-label>
+        <ion-label>Avatars</ion-label>
       </ion-item>
         <ion-item lines="none" routerLink="/alert">
         <ion-icon name="checkbox-outline" slot="start"></ion-icon>
-        <ion-label>Alert</ion-label>
+        <ion-label>Alerts</ion-label>
       </ion-item>
+      
+      <ion-item lines="none" routerLink="/badge">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>Badges</ion-label>
+      </ion-item>
+
+      <ion-item lines="none" routerLink="/card">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>Cards</ion-label>
+      </ion-item>
+
+      <ion-item lines="none" routerLink="/checkbox">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>Checkbox</ion-label>
+      </ion-item>
+
+      <ion-item lines="none" routerLink="/button">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>Button</ion-label>
+      </ion-item>
+
+
+      <ion-item lines="none" routerLink="/picker">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>Picker</ion-label>
+      </ion-item>
+
+      <ion-item lines="none" routerLink="/grid">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>Grid</ion-label>
+      </ion-item>
+      <ion-item lines="none" routerLink="/date-time">
+        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+        <ion-label>DATE TIME</ion-label>
+      </ion-item>
+
       <!-- </ion-menu-toggle> -->
       <!-- <ion-menu-toggle> -->
       <ion-item lines="none" (click)="onLogout()" button>
